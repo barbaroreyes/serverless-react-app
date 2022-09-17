@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import Users from "./component/Users"
 import './App.css';
 
+
+//https://6yzybkwg10.execute-api.us-east-1.amazonaws.com/users/dfdsd
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Users/>
     </div>
   );
 }
