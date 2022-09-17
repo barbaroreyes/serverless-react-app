@@ -1,4 +1,6 @@
 import Users from "./component/Users"
+import Single from './component/Single'
+import {Routes , Route} from 'react-router-dom'
 import './App.css';
 
 
@@ -7,7 +9,12 @@ function App() {
  
   return (
     <div className="App">
-    <Users/>
+      <Routes>
+        <Route path="/users" element={<Users/>}/>
+        <Route path="/users/:id" element={<Single/>}/>
+      </Routes>
+    
+
     </div>
   );
 }
